@@ -20,11 +20,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'two%5p-kg#m@%efoybmb!mn)n8*5i8y77cf01qi6av+!cu8f5d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = not bool(os.environ.get('DJANGO_DEBUG', ''))
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['django-bootstrap-form-demo.herokuapp.com']
 
 
 # Application definition
