@@ -1,0 +1,28 @@
+{% load bootstrap %}
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static "css/app.css" %}">
+        <title>Bootstrap form example</title>
+        <style type="text/css">
+            .multiple-checkbox ul { /* Used to hide <li> elements in multiple checkbox forms */
+              padding-left: 0px;
+              list-style: none;
+            }
+        </style>
+
+    </head>
+    <body>
+        {% include "_nav.html" %}
+
+        {% block content %}{% endblock %}
+
+        <!-- scripts -->
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
