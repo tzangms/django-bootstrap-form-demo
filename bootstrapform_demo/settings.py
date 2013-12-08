@@ -24,7 +24,7 @@ DEBUG = not bool(os.environ.get('DJANGO_DEBUG', ''))
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['django-bootstrap-form-demo.herokuapp.com']
+ALLOWED_HOSTS = ['django-bootstrap-form.herokuapp.com']
 
 
 # Application definition
